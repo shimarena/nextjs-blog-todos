@@ -31,7 +31,7 @@ export default function Auth() {
       })
       .then((data) => {
         const options = { path: "/" };
-        cookie.set("access_token", data.access,options);
+        cookie.set("access_token", data.access, options);
       })
       router.push("/main-page");
     } catch (err) {
